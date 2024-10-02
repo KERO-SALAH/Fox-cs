@@ -3,16 +3,9 @@ function change(s) {
   var img = document.getElementById("level_img");
   img.setAttribute("src", s);
 }
-document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  });
-});
+
+
+
 // الهيدر
 fetch("https://kero-salah.github.io/Fox-cs/parts/header.html")
   .then((response) => response.text())
