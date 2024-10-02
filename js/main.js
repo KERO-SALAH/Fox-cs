@@ -30,11 +30,15 @@ fetch("https://kero-salah.github.io/Fox-cs/parts/footer.html")
 fetch("https://kero-salah.github.io/Fox-cs/parts/aside.html")
   .then((response) => response.text())
   .then((data) => {
-    document.getElementById("asider").innerHTML = data;
+    document.getElementById("sidebar").innerHTML = data;
   });
+  
 //فتح القائمة الجانبية
+var sidebar = document.getElementById("sidebar");
+sidebar.style.left = "-250px";
+
 function openSidebar() {
-  var sidebar = document.getElementById("sidebar");
+  console.log(sidebar.style.left);
   if (sidebar.style.left === "-250px") {
     sidebar.style.left = "0";
   } else {
