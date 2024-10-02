@@ -4,7 +4,16 @@ function change(s) {
   img.setAttribute("src", s);
 }
 
-
+document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});
 
 // الهيدر
 fetch("https://kero-salah.github.io/Fox-cs/parts/header.html")
@@ -25,7 +34,7 @@ fetch("https://kero-salah.github.io/Fox-cs/parts/aside.html")
   .then((data) => {
     document.getElementById("sidebar").innerHTML = data;
   });
-  
+
 //فتح القائمة الجانبية
 var sidebar = document.getElementById("sidebar");
 sidebar.style.left = "-250px";
