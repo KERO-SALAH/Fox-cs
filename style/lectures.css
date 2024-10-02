@@ -82,3 +82,12 @@ h1 {
     background-color: #ff4500;
 }
 
+@media (max-width: 768px) {
+   .lectures-grid{
+    flex-direction: column;
+   }
+  }
+  
+  @media (max-width: 480px) {
+   
+  }
