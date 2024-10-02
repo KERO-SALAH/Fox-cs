@@ -1,0 +1,483 @@
+/* تنسيق عام */
+* {
+  font-family: cursive;
+  font-family: "Marhey", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* تنسيق الـ header */
+header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #202020; /* تغيير لون الخلفية */
+}
+.logo img {
+  width: 120px;
+  margin-left: 8%;
+}
+.inner_header nav {
+  margin-right: 10%;
+}
+
+.inner_header {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  background-color: #325e93;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.logo {
+  height: 100%;
+  display: contents;
+  float: left;
+}
+
+.logo h1 {
+  color: #ff5733; /* تغيير لون النص */
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "SUSE", sans-serif;
+  font-size: 32px;
+}
+
+nav a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+nav a :last-child {
+  padding-right: 0px;
+}
+
+nav a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: #f2f2f2; /* لون النص */
+  font-family: "SUSE", sans-serif;
+  font-size: 19px;
+}
+.inner_continer {
+  width: 70%;
+}
+.continer_top {
+}
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .inner_header {
+    /* ترك فارغًا لاحتياجات التصميم لاحقًا */
+  }
+
+  nav {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+  .continer_top {
+    flex-direction: column;
+  }
+  .inner_continer {
+    width: 100%;
+  }
+  .flex_post {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav a {
+  }
+  .continer_top {
+    flex-direction: column;
+  }
+  .inner_continer {
+    width: 100%;
+  }
+  .flex_post {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* تنسيق أيقونة الثلاثة شرطات (البرغر) */
+.menu_icon {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.menu_icon span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ff5733; /* لون الشرطات */
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+/* القائمة الجانبية */
+#sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+#sidebar nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+#sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+#sidebar img {
+  width: 200px;
+  border: transparent;
+  border-style: solid;
+}
+#sidebar .logo .inner_logo {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+#sidebar .logo .inner_logo h2 {
+  font-size: 30px;
+  font-family: "SUSE", sans-serif;
+}
+/* عندما تكون القائمة الجانبية مفتوحة */
+#sidebar.active {
+  left: 0;
+}
+#sidebar {
+}
+#sidebar nav a li {
+  font-size: 30px;
+}
+.img {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+.img img {
+  width: 100%;
+}
+.img h1 .fixed {
+  bottom: 20px;
+  right: 20px;
+}
+
+.kero {
+  border: 2px solid red;
+}
+.medo {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+.one::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #009688;
+}
+.one::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 0;
+  height: 0;
+  background-color: white;
+  margin-top: -10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent #009688 transparent transparent;
+}
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 5px solid;
+  align-items: center;
+  border-color: rgb(50 94 147 / 59%);
+  justify-items: center;
+}
+.color {
+  background-color: #666;
+}
+.container {
+  margin: 0px;
+}
+.box img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 90px;
+  overflow: hidden;
+}
+.box a {
+  border: 0px;
+}
+.info-courses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.contents {
+  border: 8px solid;
+  border-radius: 20px;
+  background-color: white;
+  border-color: #eb874b;
+  margin: 3%;
+}
+.total .title h1,
+.total .content {
+  color: white;
+  background-color: #eb874b;
+  padding: 10px 20px 10px 0px;
+  border-bottom-right-radius: 122px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.continer_top {
+  display: flex;
+}
+body {
+  padding: 0px;
+  margin: 0;
+  background-color: #325e93;
+}
+
+.slide {
+  width: 30%;
+  border: 3px solid gray;
+  border-radius: 20px;
+}
+.posts {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+.vh100h {
+  height: 100vh;
+}
+.vh100w {
+  width: 100vh;
+}
+.vh70h {
+  height: 70vh;
+}
+.vh70w {
+  width: 70vh;
+}
+.flex_ww {
+  flex-wrap: wrap;
+}
+/* سلايددددددددددد */
+.slideshow-container {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.img_level {
+  width: 45%;
+}
+/* hidddddddddddddddddddddde */
+.slideshow-container {
+  display: none;
+}
+/* ---------------- welcome ---------------- */
+.logooo img {
+  width: 50%;
+}
+.img150px {
+  width: 150px;
+  padding: 20px;
+}
+/* -------------footer------------ */
+.foot {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0px;
+}
+.footer {
+  margin: 20px;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  background: black;
+  padding: 5px;
+  width: 40px;
+  display: flex;
+  font-size: 30px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.kero-section {
+  /* padding: 10%; */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.margin4 {
+  margin: 4%;
+}
+.border40 {
+  border-radius: 40px;
+}
+.TOS{
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #ff7a18, #af002d);
+  margin:3%;
+  border-radius: 20px;
+
+}

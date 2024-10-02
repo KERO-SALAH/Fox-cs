@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        h1::before {
+            content: "";
+            width: 50px;
+            height: 5px;
+            background-color: #ff6600;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        .lectures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .lecture-card {
+            background: linear-gradient(135deg, #ff7a18, #af002d);
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .lecture-card:hover {
+            transform: scale(1.05);
+        }
+
+        .lecture-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lecture-image img {
+            width: 60%;
+        }
+
+        .lecture-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .lecture-description {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .lecture-button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .lecture-button:hover {
+            background-color: #ff4500;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lectures</h1>
+        <div class="lectures-grid">
+
+            <div class="lecture-card">
+                <div class="lecture-image">
+                    <img src="https://img.icons8.com/matisse/100/pdf.png" alt="Play Icon">
+                </div>
+                <div class="lecture-title">Lecture 1</div>
+                <div class="lecture-description">Introduction to Physics</div>
+                <button class="lecture-button">Show</button>
+            </div>
+
+            <div class="lecture-card">
+                <div class="lecture-image">
+                    <img src="https://img.icons8.com/matisse/100/pdf.png" alt="Play Icon">
+                </div>
+                <div class="lecture-title">Lecture 2</div>
+                <div class="lecture-description">Quantum Mechanics</div>
+                <button class="lecture-button">Show</button>
+            </div>
+
+            <div class="lecture-card">
+                <div class="lecture-image">
+                    <img src="https://img.icons8.com/matisse/100/pdf.png" alt="Play Icon">
+                </div>
+                <div class="lecture-title">Lecture 3</div>
+                <div class="lecture-description">Thermodynamics</div>
+                <button class="lecture-button">Show</button>
+            </div>
+
+            <!-- Add more lecture cards as needed -->
+
+        </div>
+    </div>
+
+</body>
+</html>

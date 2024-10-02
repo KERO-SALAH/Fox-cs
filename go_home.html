@@ -1,0 +1,49 @@
+<a href="/index.html">
+  <img class="home_logo" src="./img/Untitled design (4).png" alt="" />
+</a>
+<a href="#header" id="scrollToTop" class="scroll-top smooth-scroll">
+  <img class="scrofll-top" src="./img/Untitled design (5).png" alt="" />
+</a>
+<style>
+  img.home_logo,
+  .scroll-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9;
+    background-color: #325e93;
+    opacity: 0.9;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+
+    transition: all 0.3s;
+
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(0 0 0 / 8%);
+  }
+  .home_logo {
+    right: 22px;
+    bottom: 20px;
+  }
+  .scroll-top {
+    display: none;
+    width: 45px;
+    height: 45px;
+    right: 27px;
+    bottom: 75px;
+  }
+</style>
+<script>
+  document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  });
+</script>

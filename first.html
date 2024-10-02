@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&amp;family=Rakkas&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="./style/shortcuts.css">
+<link rel="stylesheet" href="/make_post/make_post.css">
+    <style></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Semester of Sophomore Year</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <div class=" margin4 border40">
+      <div class="total ">
+        
+      
+        <div class="contents ">
+          <div class="title" style="display: flex; flex-direction: row">
+            <h1>First Semester</h1>
+          </div>
+          <div
+            class="info-courses"
+            style="display: flex; flex-wrap: wrap; justify-content: center"
+          >
+            <div class="box">
+              <img src="https://i.ibb.co/q1pj1h9/image.png" alt="" />
+              <a class="button" href="../Subjects/Discrete.html">Discret mathmatics </a>
+            </div>
+            <div class="box">
+              <img src="https://i.ibb.co/8d97Br0/image.png" alt="" />
+              <a class="button" href="./Subjects/Datacommunication.html">Data communication </a>
+            </div>
+            <div class="box none">
+              <img src="https://i.ibb.co/VNy2qQG/image.png" alt="" />
+              <a class="button" href="#">PM (project management)</a>
+            </div>
+            <div class="box ">
+              <img src="https://i.ibb.co/bRTCQry/image.png" alt="" />
+              <a class="button" href="#">IS (information system)</a>
+            </div>
+            <div class="box none">
+              <img src="https://i.ibb.co/QNzGjkB/image.png" alt="" />
+              <a
+                class="button"
+                href="/Subjects/oop.html"
+                >OOP (Object-oriented programming)</a
+              >
+            </div>
+
+            <div class="box none">
+              <img src="https://i.ibb.co/yfrSMYG/image.png" alt="" />
+              <a
+                class="button"
+                href="https://fox-cs.blogspot.com/p/technical-writing.html"
+                >TW (Tecnical writing)</a
+              >
+            </div>
+            <div class="box none">
+              <img src="https://i.ibb.co/r7GVK5M/image.png" alt="" />
+              <a class="button" href="#">business administration</a>
+            </div>
+          </div>
+
+          <div class="Important Links">
+            <a
+              href="https://fox-cs.blogspot.com/p/important-links.html"
+              class="button"
+              style="background: #c31111;"
+              >Important Links 🔗</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="asider"></div>
+
+    <script>
+      fetch("aside.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("asider").innerHTML = data;
+        });
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="script.js"></script>
+    <div id="footer"></div>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+   
+
+  </body>
+</html>

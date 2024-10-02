@@ -1,0 +1,84 @@
+
+       
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.lectures-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.lecture-card {
+    background: linear-gradient(135deg, #ff7a18, #af002d);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.lecture-card:hover {
+    transform: scale(1.05);
+}
+
+.lecture-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lecture-image img {
+    width: 60%;
+}
+
+.lecture-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.lecture-description {
+  
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+.lecture-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lecture-button:hover {
+    background-color: #ff4500;
+}
+

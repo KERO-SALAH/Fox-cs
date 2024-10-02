@@ -1,0 +1,364 @@
+  /*-----------------Page : Certificate Gallery-------------*/
+  .certificate img {
+    max-width: -webkit-fill-available;
+}
+.certificate{
+    border:2px solid ;
+    border-radius:20px;
+  }
+  /*-----------------End of Page : Certificate Gallery -------------*/
+   /*-----------------Page : first-semester-of-sophomore-year------------*/
+/*
+.box {
+  border-radius: 20px;
+  border: 5px solid;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-color: rgb(0 0 0 / 10%);
+}
+.box img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 90px;
+  overflow: hidden;
+}
+.box a {
+  border: 0px;
+}
+.info-courses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+.contents {
+  border: 5px solid;
+  border-radius: 20px;
+  margin: 20px;
+  border-color: rgb(0 110 229);
+}
+.total .title h1,.total .content{
+    
+    text-align: left;
+    border: 7px solid;
+    border-radius: 0px;
+    color: white;
+    display: inline-block;
+    background-color: #007bff;
+    border-color: rgb(0 0 0 / 10%);
+    border-bottom-right-radius: 20px;
+  
+
+}
+/* .total{
+    border: 5px solid;
+    border-radius: 20px;
+    margin: 20px;
+    border-color: rgb(0 110 229);
+} */
+
+
+
+*/
+
+
+
+  /*-----------------end Page : Certificate Gallery-------------*/
+
+ /*-----------------Page : Important Links-------------*/
+.Important a {
+    background-color: beige;
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.Important.Links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  /*-----------------End of Important Links-------------*/
+
+.button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #d0633745;
+    border: 1px solid;
+    border-color: rgb(0 0 0 / 10%);
+    border-radius: 16px 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  img {
+    
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+    direction: rtl;
+  }
+  a {
+    font-weight: bold;
+  }
+ 
+  /*-----------------Header-------------*/
+  
+  .header {
+    background-color: #ede6e6;
+    
+    border: 1px solid;
+    border-color: rgb(0 0 0 / 10%);
+    border-radius: 16px 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    width: -webkit-fill-available;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    padding: 0px 10px;
+    margin: 0px;
+}
+  /*-----------------End Of Header-------------*/
+  
+  .advertisement {
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  
+  
+  /*-----------------Footer-------------*/
+  .footer {
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    background-color: #ede6e6;
+   
+    border: 1px solid;
+    border-color: rgb(0 0 0 / 10%);
+    border-radius: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: black;
+    width: -webkit-fill-available;
+  }
+  .footer img {
+    max-width: 100px;
+    height: auto;
+    padding: 0px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .footer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .footer a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #ff6600;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer h1 {
+      font-size: 20px;
+    }
+  
+    .footer img {
+      max-width: 80px;
+    }
+  
+    .footer a.button {
+      padding: 8px 16px;
+      margin-top: 5px;
+    }
+  }
+  /*-----------------End Of Footer-------------*/
+  
+  .hidden {
+    display: none;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+ 
+  
+   /*----------------- Image properties -------------*/
+ 
+  img {
+    max-width: 50%;
+    height: auto;
+    padding: 0px;
+  }
+   /*----------------- End of Image properties -------------*/
+
+  body,
+  html {
+    
+    height: 100%;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  body {
+    color: #333;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+  
+  
+    background: #fff;
+    border-radius: 8px;
+  
+    margin: 0px;
+    text-align: center;
+  }
+  h1 {
+    color: #007bff;
+    direction: ltr;
+  }
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background: #007bff;
+    border: 1px solid;
+    border-color: rgb(0 0 0 / 10%);
+    border-radius: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .card {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, background 0.3s;
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: rgb(0 0 0 / 10%);
+    border-radius: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .card a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    margin: 10px 0px;
+    background-color: rgb(245 244 244);
+    border: 1px solid;
+    border-color: rgb(0 0 0 / 10%);
+    border-radius: 16px 8px;
+    overflow: hidden;
+    color: black;
+  }
+  h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+    direction: ltr;
+  }
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .lecture {
+    border: 2px solid rgb(151, 147, 155);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+.lectures{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.open-file img{
+    padding: 0px;
+    width: 10px;
+    height: auto;
+    
+}
+.open-file{
+    background-color: darkgrey;
+    border-radius: 20px;
+    padding: 5px;
+}
+h2.main {
+    padding: 0px 50px;
+}
+h2 {
+    display: inline;
+    border-bottom: 2px solid;
+}

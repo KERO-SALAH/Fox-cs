@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/make_post/make_post.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <script>
+      fetch("/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <style>
+      .top {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10em;
+        width: 20em;
+        margin: 0px 5%;
+      }
+
+      .box .title_of_box {
+        padding: 0px 30px;
+      }
+      .top {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10em;
+        width: 100%;
+
+        margin-bottom: 100px;
+      }
+
+      .container {
+        margin: 0px;
+      }
+      .box img {
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+        border-radius: 90px;
+        overflow: hidden;
+      }
+      .box a {
+        border: 0px;
+      }
+
+      .info-courses {
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 0px 30px;
+        justify-content: center;
+        flex-direction: row-reverse;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .contents {
+        border: 8px solid;
+        border-radius: 20px;
+        background-color: white;
+        border-color: #eb874b;
+        margin: 3%;
+      }
+      .total .title h1,
+      .total .content {
+        text-align: left;
+        border: 7px solid;
+        border-radius: 0px;
+        color: white;
+        display: inline-block;
+        background-color: #007bff;
+        border-color: rgb(0 0 0 / 10%);
+        border-bottom-right-radius: 20px;
+      }
+
+      .title_Of {
+        border: 4px solid;
+        border-color: rgb(0 0 0 / 10%);
+        border-radius: 20px;
+        background-color: #007bff;
+        color: white;
+      }
+      .title h1 {
+        color: white;
+        background-color: #eb874b;
+        padding: 10px 20px 10px 0px;
+        border-bottom-right-radius: 122px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    <div class="contents">
+      <div class="title" style="display: flex">
+        <h1>Lectures:</h1>
+      </div>
+      <div class="info-courses">
+        <div
+          class="box top"
+          style="
+            background-image: url(https://www.stonebridge.uk.com/blog/wp-content/uploads/2020/09/SAC-Blog-University-Lecturer-Expert-Specialist.png);
+          "
+        ></div>
+        <div class="many flex_post flex_jcc_post flex_ww gap20">
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Lecture_1</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Lecture_2</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Lecture_3</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Lecture_4</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Lecture_5</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Lecture_6</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="title" style="display: flex">
+        <h1>Sections:</h1>
+      </div>
+      <div class="info-courses">
+        <div
+          class="box top"
+          style="
+            background-image: url(https://www.shutterstock.com/image-photo/group-computer-neatly-placed-lab-260nw-605958425.jpg);
+          "
+        ></div>
+        <div class="many flex_post flex_jcc_post flex_ww gap20">
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_1</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_2</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_3</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_4</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_5</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_6</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="title" style="display: flex">
+        <h1>PDFs:</h1>
+      </div>
+      <div class="info-courses">
+        <div
+          class="box top"
+          style="
+            background-image: url(https://www.shutterstock.com/image-photo/group-computer-neatly-placed-lab-260nw-605958425.jpg);
+          "
+        ></div>
+        <div class="many flex_post flex_jcc_post flex_ww gap20">
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Scanner</h4>
+            <a
+              class="button"
+              href="https://courses.cs.washington.edu/courses/cse142/08au/lectures/2008-10-13_ch03-3/09-ch03-3-scanner.pdf"
+              >Show
+            </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">Java Book</h4>
+            <a
+              class="button"
+              href="https://www.sietk.org/downloads/javabook.pdf"
+              >Show
+            </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_3</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_4</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_5</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+
+          <div class="box flex_post flex_jcc_post">
+            <h4 class="title_of_box">section_6</h4>
+            <a class="button" href="github.com">Show </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="asider"></div>
+
+    <script>
+      fetch("/aside.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("asider").innerHTML = data;
+        });
+    </script>
+    <script src="/js/main.js"></script>
+    <script src="script.js"></script>
+    <div id="footer"></div>
+
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

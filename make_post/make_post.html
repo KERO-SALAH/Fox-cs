@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحة إدخال رسالة</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+        height: 100px;
+        font-size: 16px;
+      }
+
+      select,
+      input[type="checkbox"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .result {
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .html-code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        white-space: pre-wrap;
+        font-family: monospace;
+        direction: ltr;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>إدخال الرسالة</h1>
+
+      <label for="language">اختر اللغة:</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="rtl">العربية</option>
+        <option value="ltr">الإنجليزية</option>
+      </select>
+
+      <label for="message">أدخل الرسالة:</label>
+      <textarea id="message" placeholder="اكتب رسالتك هنا..."></textarea>
+
+      <label>
+        <input type="checkbox" id="includeDate" />
+        إضافة التاريخ والوقت إلى الرسالة
+      </label>
+
+      <button onclick="submitMessage()">إرسال الرسالة</button>
+
+      <div class="result" id="result"></div>
+      <div class="html-code" id="htmlCode"></div>
+    </div>
+
+    <script src="/test/make_post.js"></script>
+
+  </body>
+</html>

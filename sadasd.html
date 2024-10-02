@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Link Color Change</title>
+    <style>
+      /* تنسيق الرابط في الحالة الطبيعية */
+      a {
+        color: black; /* اللون الأصلي للرابط */
+        text-decoration: none;
+      }
+
+      /* تنسيق الرابط بعد الزيارة */
+      a:visited {
+        color: black; /* احتفظ بنفس اللون بعد زيارة الرابط */
+      }
+
+      /* تنسيق الرابط عند التمرير عليه */
+      a:hover {
+        color: red; /* على سبيل المثال، تغيير اللون عند التمرير */
+      }
+    </style>
+  </head>
+  <body>
+    <p>قم بزيارة <a href="https://example.com">هذا الرابط</a>.</p>
+  </body>
+</html>
