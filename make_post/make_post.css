@@ -54,8 +54,9 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 /* الازرار */
-.btn-elegant_post,.button {
-  height: 30px;
+.btn-elegant_post,
+.button {
+  min-height: 30px;
   padding: 15px 30px;
   background-color: #325e93;
   color: white;
@@ -74,7 +75,7 @@
   background-color: #eb874b;
   transform: scale(1.05);
 }
-.button:hover{
+.button:hover {
   background-color: #eb874b;
   transform: scale(1.05);
 }
