@@ -7,9 +7,12 @@
 .pr40 {
   padding-right: 40px;
 }
-.mt10{
-    margin-top:10px ;
+.mt10 {
+  margin-top: 10px;
 }
 .none {
   display: none;
+}
+.tac {
+  text-align: center;
 }
