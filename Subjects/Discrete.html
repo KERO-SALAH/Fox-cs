@@ -205,25 +205,22 @@
       <div class="mas">
         <div class="title news">
           <h1>News</h1>
-        </div>
-        <div class="post_post border_post padding30_post">
-          <div class="top_post flex_post">
-            <div class="img_post">
-              <img
-                class="img50_post"
-                src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
-                alt=""
-              />
-            </div>
-            <div class="name_time_post">
-              <div class="name_post">Fox</div>
-              <div class="time_post">06/10/2024, 4 pm</div>
-            </div>
-          </div>
-          <hr />
-          <div class="mid_post">
-            <h3 class="rtl">تست تست تست</h3>
-          </div>
+          <div id="mas"></div>
+          <script>
+            fetch("/make_post/test.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("mas").innerHTML = data;
+              });
+          </script>
+          <style>
+            .dis{
+              display: block;
+            }
+            .mass{
+              gap: 20px;
+            }
+          </style>
         </div>
       </div>
     </div>

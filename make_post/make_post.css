@@ -88,3 +88,10 @@
 .ltr {
   direction: ltr;
 }
+.is,.dc,.tw,.dis,.pm,.ba,.oop{
+  display: none;
+}
+.mass{
+  display: flex;
+  flex-direction: column;
+}
