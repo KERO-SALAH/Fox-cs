@@ -88,7 +88,7 @@
 .ltr {
   direction: ltr;
 }
-.is,.dc,.tw,.dis,.pm,.ba,.oop{
+.is,.dc,.tw,.dis,.pm,.ba,.oop,.ps{
   display: none;
 }
 .mass{
