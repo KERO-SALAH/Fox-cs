@@ -508,8 +508,13 @@ img {
 img.img50_post {
   padding: 5px;
 }
+.mid_post a {
+  color: blue;
+}
+
 .mid_post {
   color: white;
+  font-size: 11px;
 }
 
 @media (max-width: 480px) {
@@ -562,4 +567,9 @@ img.img50_post {
 }
 .contents {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+#mas {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
 }

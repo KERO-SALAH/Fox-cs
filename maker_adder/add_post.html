@@ -93,22 +93,26 @@
       <h1>إدخال الرسالة</h1>
 
       <label for="language">اختر اللغة:</label>
-      <select id="language" onchange="changeLanguage()">
-        <option value="rtl">العربية</option>
-        <option value="ltr">الإنجليزية</option>
+      <select id="language">
+        <option value="DC">Data communication</option>
+        <option value="OOP">OOP</option>
+        <option value="IS">IS</option>
+        <option value="TW">TW</option>
+        <option value="PM">PM</option>
+        <option value="BA">business administration</option>
+        <option value="DM">DM</option>
       </select>
 
       <label for="message">أدخل الرسالة:</label>
-      <textarea id="message" placeholder="اكتب رسالتك هنا..."></textarea>
-
-     
+      <textarea style="direction: rtl;" id="message" placeholder="اكتب رسالتك هنا..."></textarea>
 
       <button onclick="submitMessage()">إرسال الرسالة</button>
 
       <div class="result" id="result"></div>
       <div class="html-code" id="htmlCode"></div>
-    </div>
- 
-    <script src="/make_post/make_post.js"></script>
+    </div> 
+
+    <script src="/maker_adder/js/add_post.js"></script>
   </body>
 </html>
+  

@@ -1,0 +1,99 @@
+* {
+  text-decoration: none;
+}
+.border_post {
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+.img50_post {
+  width: 70px;
+  height: auto;
+  background-color: antiquewhite;
+}
+.img_post {
+  padding-right: 20px;
+}
+.icon_post {
+  width: 50px;
+}
+.padding30_post {
+  padding: 30px;
+}
+.flex_post {
+  display: flex;
+  align-items: center;
+}
+.like_post,
+.comment_post,
+.share_post {
+  width: 30%;
+}
+/* خط يمين */
+.lr_post {
+  border-right: 5px solid gray;
+}
+/* خط شمال */
+.ll_post {
+  border-left: 5px solid gray;
+}
+.h4_post {
+  padding: 10px;
+  margin: 0;
+}
+.flex_jcc_post {
+  justify-content: center;
+}
+.flex_dc {
+  flex-direction: column;
+}
+
+.gap20 {
+  gap: 20px;
+}
+.shadow_post {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* الازرار */
+.btn-elegant_post,
+.button {
+  min-height: 30px;
+  padding: 15px 30px;
+  background-color: #325e93;
+  color: white;
+  border: none;
+  border-radius: 90px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-elegant_post:hover {
+  background-color: #eb874b;
+  transform: scale(1.05);
+}
+.button:hover {
+  background-color: #eb874b;
+  transform: scale(1.05);
+}
+/* نهاية الازرار*/
+
+/* يمين الي اليسار */
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+
+.mass {
+  display: flex;
+  flex-direction: column;
+}
+strong {
+  font-weight: 999;
+  color: black;
+}

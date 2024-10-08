@@ -1,16 +1,3 @@
-function changeLanguage() {
-  var language = document.getElementById("language").value;
-  var message = document.getElementById("message");
-
-  if (language === "ar") {
-    message.style.direction = "rtl";
-    message.placeholder = "اكتب رسالتك هنا...";
-  } else {
-    message.style.direction = "ltr";
-    message.placeholder = "Write your message here...";
-  }
-}
-
 function submitMessage() {
   var language = document.getElementById("language").value;
 
@@ -64,21 +51,7 @@ function submitMessage() {
 
     htmlCode.innerText = htmlContent;
 
-    // إظهار زر النسخ
-    copyBtn.style.display = "block";
   }
 }
 
-function copyToClipboard() {
-  var htmlCode = document.getElementById("htmlCode").innerText;
 
-  // نسخ الكود إلى الحافظة
-  navigator.clipboard.writeText(htmlCode).then(
-    function () {
-      alert("تم نسخ الكود بنجاح!");
-    },
-    function () {
-      alert("فشل في نسخ الكود. حاول مرة أخرى.");
-    }
-  );
-}

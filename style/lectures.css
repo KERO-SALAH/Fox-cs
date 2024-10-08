@@ -12,11 +12,19 @@ h1 {
   position: relative;
 }
 
-.lectures-grid {
+#important {
+  display: flex;
+  gap: 20px;
+}
+#lectures {
   display: flex;
   gap: 20px;
 }
 
+#summaries {
+  display: flex;
+  gap: 20px;
+}
 .lecture-card {
   background: linear-gradient(135deg, #ff7a18, #af002d);
   border-radius: 15px;
@@ -78,13 +86,33 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .lectures-grid {
+  #important {
+    flex-direction: column;
+  }
+  #important {
+    flex-direction: column;
+  }
+  #lectures {
+    flex-direction: column;
+  }
+
+  #summaries {
     flex-direction: column;
   }
 }
 
 @media (max-width: 480px) {
-  .lectures-grid {
+  #important {
+    flex-direction: column;
+  }
+  #important {
+    flex-direction: column;
+  }
+  #lectures {
+    flex-direction: column;
+  }
+
+  #summaries {
     flex-direction: column;
   }
 }
