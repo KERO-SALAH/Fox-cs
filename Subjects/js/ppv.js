@@ -9,7 +9,7 @@ fetch("../maker_adder/DB/posts.html")
   .then((data) => {
     document.getElementById("summaries").innerHTML = data;
   });
-  fetch("../maker_adder/DB/lecture.html")
+  fetch("../maker_adder/DB/Lecture.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("lectures").innerHTML = data;
