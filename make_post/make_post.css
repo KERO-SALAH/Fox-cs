@@ -6,9 +6,9 @@
   border-radius: 20px;
 }
 .img50_post {
-  width: 70px;
+  width: 45px;
   height: auto;
-  background-color: antiquewhite;
+  border-radius: 100%;
 }
 .img_post {
   padding-right: 20px;
@@ -88,10 +88,17 @@
 .ltr {
   direction: ltr;
 }
-.is,.dc,.tw,.dis,.pm,.ba,.oop,.ps{
+.is,
+.dc,
+.tw,
+.dis,
+.pm,
+.ba,
+.oop,
+.ps {
   display: none;
 }
-.mass{
+.mass {
   display: flex;
   flex-direction: column;
 }

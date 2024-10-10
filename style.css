@@ -87,6 +87,9 @@ nav a li {
   .inner_header {
     /* ترك فارغًا لاحتياجات التصميم لاحقًا */
   }
+  #total_div{
+    width: 100%;
+  }
 
   nav {
     display: none;
@@ -113,6 +116,9 @@ nav a li {
 @media (max-width: 480px) {
   .logo h1 {
     font-size: 18px;
+  }
+  #total_div{
+    width: 100%;
   }
 
   .menu_icon {
@@ -528,6 +534,7 @@ img.img50_post {
     text-align: center;
     display: none;
   }
+  
 
   .time_post {
     text-align: center;
@@ -573,3 +580,25 @@ img.img50_post {
   gap: 20px;
   display: flex;
 }
+.up_total_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#total_div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post_post:nth-child(n + 5) {
+  display: none;
+}
+.title h1 {
+  color: white;
+  background-color: #eb874b;
+  padding: 10px 20px 10px 0px;
+  border-bottom-right-radius: 122px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+

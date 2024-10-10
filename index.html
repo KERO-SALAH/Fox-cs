@@ -19,124 +19,126 @@
   </head>
   <body style="position: relative">
     <header id="header"></header>
-    <div
-      style="height: 100vh; text-align: center; background-color: whitesmoke"
-      class="border40 margin4 welcome flex_post flex_dc flex_jcc_post"
-    >
-      <div class="logooo">
-        <img
-          src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
-          alt=""
-        />
-      </div>
-      <div class="w">
-        <h1>welcome to my website</h1>
-      </div>
-      <div class="options flex_post gap20">
-        <div href="#chose_id" class="smooth-scroll btn-elegant_post flex_post">
-          <a>Levels</a>
-        </div>
-        <a
-          href="https://docs.google.com/spreadsheets/d/1vWc4s_V5LEsPrfpnGgqGCreJ-YNfq_mC/edit?gid=2079308075#gid=2079308075"
-        >
-          <div class="btn-elegant_post flex_post">schedule</div>
-        </a>
-        <!-- <div class="btn-elegant_post flex_post">kero</div> -->
-      </div>
-    </div>
-    <div
-      id="chose_id"
-      class="border40 margin4 flex_post flex_jcc_post"
-      style="background-color: antiquewhite; justify-content: space-around"
-    >
-      <div class="kero-section">
-        <div class="pl40 flex_post flex_jcc_post flex_dc">
-          <h1 style="text-align: center">chose Your level</h1>
-          <div class="option_levels gap20 flex_post flex_jcc_post" style="
-          margin: 20px;
-      ">
-            <div class="first none">
-              <div
-                onmouseover="change('img/levels/1.png')"
-                onmouseleave="change('img/levels/Escape Level I.png')"
-                class="btn-elegant_post flex_post"
-              >
-                <h4>First</h4>
-              </div>
-            </div>
-            <div class="first">
-              <div
-                onmouseover="change('img/levels/4.png')"
-                onmouseleave="change('img/levels/Escape Level I.png')"
-                class="btn-elegant_post flex_post"
-                style="padding: 0px 20px"
-              >
-                <a href="first.html"><h4>Second</h4></a>
-              </div>
-            </div>
-            <div class="first none">
-              <div
-                onmouseover="change('img/levels/2.png')"
-                onmouseleave="change('img/levels/Escape Level I.png')"
-                class="btn-elegant_post flex_post"
-              >
-                <h4>Third</h4>
-              </div>
-            </div>
-            <div class="first none">
-              <div
-                onmouseover="change('img/levels/3.png')"
-                onmouseleave="change('img/levels/Escape Level I.png')"
-                class="btn-elegant_post flex_post"
-              >
-                <h4>Fourth</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="img_level p40">
-          <img id="level_img" src="img/levels/Escape Level I.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div
-      id="chose_id"
-      class="border40 margin4 flex_post flex_jcc_post"
-      style="background-color: antiquewhite; justify-content: space-around"
-    >
-      <div class="none kero-section">
+    <style>
+      .im {
+        display: block;
+      }
+      .mas {
+        width: auto;
+      }
+
+      div#mas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      .post_post.DC.border_post.padding30_post {
+        max-width: 400px;
+      }
+    </style>
+    <div class="up_total_div margin4">
+      <div class="total_div" id="total_div">
         <div
           style="
-            background-color: antiquewhite;
-            padding: 58px;
-            border-radius: 20px;
+            height: 100vh;
+            text-align: center;
+            background-color: whitesmoke;
           "
-          class="flex_post flex_jcc_post flex_dc"
+          class="border40 welcome flex_post flex_dc flex_jcc_post"
         >
-          <h1 style="text-align: center">Choose your department</h1>
-          <img
-            class="img150px"
-            src="https://i.ibb.co/Vq82qBt/clipboard.png"
-            alt=""
-          />
-
-          <div class="option_levels gap20 flex_post flex_jcc_post">
-            <div class="first">
-              <div class="btn-elegant_post flex_post">
-                <h4>CS</h4>
+          <div class="logooo">
+            <img
+              src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
+              alt=""
+            />
+          </div>
+          <div class="w">
+            <h1>welcome to my website</h1>
+          </div>
+          <div class="options flex_post gap20">
+            <div
+              href="#chose_id"
+              class="smooth-scroll btn-elegant_post flex_post"
+            >
+              <a>Levels</a>
+            </div>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1vWc4s_V5LEsPrfpnGgqGCreJ-YNfq_mC/edit?gid=2079308075#gid=2079308075"
+            >
+              <div class="btn-elegant_post flex_post">schedule</div>
+            </a>
+            <!-- <div class="btn-elegant_post flex_post">kero</div> -->
+          </div>
+        </div>
+        <div
+          id="chose_id"
+          class="border40 flex_post flex_jcc_post"
+          style="background-color: antiquewhite; justify-content: space-around"
+        >
+          <div class="kero-section">
+            <div class="pl40 flex_post flex_jcc_post flex_dc">
+              <h1 style="text-align: center">chose Your level</h1>
+              <div
+                class="option_levels gap20 flex_post flex_jcc_post"
+                style="margin: 20px"
+              >
+                <div class="first none">
+                  <div
+                    onmouseover="change('img/levels/1.png')"
+                    onmouseleave="change('img/levels/Escape Level I.png')"
+                    class="btn-elegant_post flex_post"
+                  >
+                    <h4>First</h4>
+                  </div>
+                </div>
+                <div class="first">
+                  <div
+                    onmouseover="change('img/levels/4.png')"
+                    onmouseleave="change('img/levels/Escape Level I.png')"
+                    class="btn-elegant_post flex_post"
+                    style="padding: 0px 20px"
+                  >
+                    <a href="first.html"><h4>Second</h4></a>
+                  </div>
+                </div>
+                <div class="first none">
+                  <div
+                    onmouseover="change('img/levels/2.png')"
+                    onmouseleave="change('img/levels/Escape Level I.png')"
+                    class="btn-elegant_post flex_post"
+                  >
+                    <h4>Third</h4>
+                  </div>
+                </div>
+                <div class="first none">
+                  <div
+                    onmouseover="change('img/levels/3.png')"
+                    onmouseleave="change('img/levels/Escape Level I.png')"
+                    class="btn-elegant_post flex_post"
+                  >
+                    <h4>Fourth</h4>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="first">
-              <div class="btn-elegant_post flex_post">
-                <a href="First Semester of Sophomore Year.html"><h4>AI</h4></a>
-              </div>
-            </div>
-            <div class="first">
-              <div class="btn-elegant_post flex_post">
-                <h4>SE</h4>
-              </div>
+            <div class="img_level p40">
+              <img id="level_img" src="img/levels/Escape Level I.png" alt="" />
             </div>
           </div>
+        </div>
+      </div>
+      <div class="mas">
+        <div class="title news">
+          <h1>News</h1>
+          <div id="mas"></div>
+          <script>
+            fetch("maker_adder/DB/posts.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("mas").innerHTML = data;
+              });
+          </script>
         </div>
       </div>
     </div>

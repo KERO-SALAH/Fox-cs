@@ -40,12 +40,12 @@ function submitMessage() {
             <div class="img_post">
               <img
                 class="img50_post"
-                src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
+                src="https://i.ibb.co/V3CHNC2/kero-kero.jpg"
                 alt=""
               />
             </div>
             <div class="name_time_post">
-              <div class="name_post">Fox</div>
+              <div class="name_post">KE RO Salah</div>
               <div class="time_post">${dateString}</div>
             </div>
           </div>
