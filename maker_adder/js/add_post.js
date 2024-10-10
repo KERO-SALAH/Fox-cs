@@ -13,15 +13,11 @@ function submitMessage() {
 
     // تحويل النص بين النجوم (*) إلى نص عريض (Bold)
     finalMessage = finalMessage.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
-
-    // تحويل الروابط إلى "من هنا"
+    finalMessage = finalMessage.replace(/\n/g, "<br>");
     finalMessage = finalMessage.replace(
       /(https?:\/\/[^\s]+)/g,
       '<a href="$1" target="_blank">من هنا</a>'
     );
-
-    // تحويل الأسطر الجديدة إلى <br>
-    finalMessage = finalMessage.replace(/\n/g, "<br>");
 
     var options = {
       day: "numeric",

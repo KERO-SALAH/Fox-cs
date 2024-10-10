@@ -2,6 +2,8 @@ function submitMessage() {
   var language = document.getElementById("language").value;
   var dis = document.getElementById("dis").value;
   var link = document.getElementById("link").value;
+  var title = document.getElementById("title").value;
+
 
   var result = document.getElementById("result");
   var htmlCode = document.getElementById("htmlCode");
@@ -38,7 +40,7 @@ function submitMessage() {
                     alt="Play Icon"
                   />
                 </div>
-                <div class="lecture-title">Lecture 1</div>
+                <div class="lecture-title">${title}</div>
                 <div class="lecture-description">${dis}</div>
                 <a
                   href="${link}"
