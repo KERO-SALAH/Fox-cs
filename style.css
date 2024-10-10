@@ -116,7 +116,6 @@ nav a li {
   }
 
   .post_post {
-    width: 100%;
     max-width: 100%;
   }
 }
@@ -126,7 +125,6 @@ nav a li {
     font-size: 18px;
   }
   .post_post {
-    width: 100%;
     max-width: 100%;
   }
   #total_div {
