@@ -87,7 +87,7 @@ nav a li {
   .inner_header {
     /* ترك فارغًا لاحتياجات التصميم لاحقًا */
   }
-  #total_div{
+  #total_div {
     width: 100%;
   }
 
@@ -117,7 +117,7 @@ nav a li {
   .logo h1 {
     font-size: 18px;
   }
-  #total_div{
+  #total_div {
     width: 100%;
   }
 
@@ -538,7 +538,6 @@ img.img50_post {
     text-align: center;
     display: none;
   }
-  
 
   .time_post {
     text-align: center;
@@ -574,7 +573,6 @@ img.img50_post {
 }
 .post_post.border_post.padding30_post {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background: brown;
 }
 .contents {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -605,4 +603,3 @@ img.img50_post {
   border-bottom-right-radius: 122px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
