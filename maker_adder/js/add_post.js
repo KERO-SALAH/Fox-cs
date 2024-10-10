@@ -17,7 +17,10 @@ function submitMessage() {
       /(https?:\/\/[^\s]+)/g,
       '<a href="$1" target="_blank">من هنا</a>'
     );
+    console.log(finalMessage);
     finalMessage = finalMessage.replace(/\n/g, "<br>");
+    console.log(finalMessage);
+    finalMessage = finalMessage.replace(/(<br\s*\/?>){2,}/g, "<br>");
 
     var options = {
       day: "numeric",
