@@ -83,7 +83,9 @@
 
 /* يمين الي اليسار */
 .rtl {
+  display: flex;
   direction: rtl;
+  flex-direction: column;
 }
 .ltr {
   direction: ltr;

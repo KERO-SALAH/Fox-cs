@@ -515,7 +515,11 @@ img.img50_post {
   padding: 5px;
 }
 .mid_post a {
+  background: white;
   color: blue;
+  padding: 0px 8px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .mid_post {
