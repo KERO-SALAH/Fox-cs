@@ -118,8 +118,7 @@ nav a li {
   .post_post {
     max-width: 100%;
   }
-  .up_total_div{
-
+  .up_total_div {
   }
 }
 
@@ -597,7 +596,7 @@ img.img50_post {
 }
 .up_total_div {
   display: flex;
-  
+
   gap: 30px;
 }
 #total_div {
@@ -618,9 +617,33 @@ img.img50_post {
 }
 @media (max-width: 900px) {
   .up_total_div {
-flex-direction: column;  }
+    flex-direction: column;
+  }
 }
 @media (max-width: 480px) {
   .up_total_div {
-flex-direction: column;  }
+    flex-direction: column;
+  }
+}
+.lecture-title {
+  text-align: center;
+}
+
+.lecture-card {
+  max-width: 123px;
+}
+
+div#important {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#lectures {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#summaries {
+  flex-wrap: wrap;
+  justify-content: center;
 }
