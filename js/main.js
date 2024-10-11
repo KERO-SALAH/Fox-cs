@@ -16,20 +16,20 @@ document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
 });
 
 // الهيدر
-fetch("../parts/header.html")
+fetch("https://kero-salah.github.io/Fox-cs/parts/header.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("header").innerHTML = data;
   });
 //الفوتر
-fetch("../parts/footer.html")
+fetch("https://kero-salah.github.io/Fox-cs/parts/footer.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("footer").innerHTML = data;
   });
 
 //القائمة الجانبية
-fetch("../parts/aside.html")
+fetch("https://kero-salah.github.io/Fox-cs/parts/aside.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("sidebar").innerHTML = data;
@@ -48,7 +48,7 @@ function openSidebar() {
   }
 }
 //عرض الازرار الجانبية مثل الهوم و الاب
-fetch("../parts/go_home.html")
+fetch("https://kero-salah.github.io/Fox-cs/parts/go_home.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("go_home").innerHTML = data;
