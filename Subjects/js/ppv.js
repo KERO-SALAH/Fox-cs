@@ -14,6 +14,11 @@ fetch("../maker_adder/DB/posts.html")
   .then((data) => {
     document.getElementById("lectures").innerHTML = data;
   });
+  fetch("../maker_adder/DB/sections.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("sections").innerHTML = data;
+  });
   fetch("../maker_adder/DB/important.html")
   .then((response) => response.text())
   .then((data) => {
