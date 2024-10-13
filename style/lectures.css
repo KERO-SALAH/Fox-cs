@@ -31,7 +31,6 @@ h1 {
   background: linear-gradient(135deg, #ff7a18, #af002d);
   border-radius: 15px;
   padding: 20px;
-  max-width: 150px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -45,11 +44,10 @@ h1 {
 }
 
 .lecture-image {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #fff;
-  margin: 0 auto 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +58,7 @@ h1 {
 }
 
 .lecture-title {
-  font-size: 18px;
+  font-size: 10px;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -86,7 +84,7 @@ h1 {
   background-color: #ff4500;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   #important {
     flex-direction: column;
   }
@@ -115,5 +113,52 @@ h1 {
 
   #summaries {
     flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .up_total_div {
+    flex-direction: column;
+  }
+  .lecture-title {
+    margin: 0px auto;
+  }
+
+  .lecture-description {
+    display: none;
+  }
+  .lecture-card {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 680px) {
+  .lecture-card {
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  .aa a {
+    width: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .lecture-title {
+    width: 50px;
+  }
+}
+@media (max-width: 420px) {
+  .lecture-title {
+    width: 90px;
+  }
+}
+@media (max-width: 520px) {
+  .lecture-title {
+    width: 120px;
+  }
+}
+@media (min-width: 900px) {
+  .lecture-card {
+    max-width: 120px;
+    justify-content: space-between;
   }
 }

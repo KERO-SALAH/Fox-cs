@@ -82,9 +82,7 @@ nav a li {
 }
 .continer_top {
 }
-.post_post {
-  max-width: 330px;
-}
+
 /* تصميم متجاوب */
 @media (max-width: 900px) {
   .inner_header {
@@ -614,25 +612,16 @@ img.img50_post {
   border-bottom-right-radius: 122px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 900px) {
-  .up_total_div {
-    flex-direction: column;
-  }
-}
-@media (max-width: 480px) {
-  .up_total_div {
-    flex-direction: column;
-  }
-}
+
 .lecture-title {
   text-align: center;
 }
 
-.lecture-card {
-  max-width: 123px;
-}
-
 div#important {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div#sections {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -646,6 +635,20 @@ div#summaries {
   flex-wrap: wrap;
   justify-content: center;
 }
-.post_post {
-  min-width: 333px;
+
+@media (max-width: 680px) {
+  .up_total_div {
+    flex-direction: column;
+  }
+  .lecture-title {
+  }
+
+  .lecture-description {
+    display: none;
+  }
+  .lecture-card {
+    flex-direction: row;
+  }
+}
+@media (max-width: 680px) {
 }

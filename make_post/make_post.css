@@ -104,3 +104,8 @@
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 900px) {
+  .post_post {
+    width: 350px;
+  }
+}
