@@ -567,7 +567,6 @@ img.img50_post {
   }
   .name_post {
     text-align: center;
-    display: none;
   }
 
   .time_post {
@@ -646,4 +645,7 @@ div#lectures {
 div#summaries {
   flex-wrap: wrap;
   justify-content: center;
+}
+.post_post {
+  min-width: 333px;
 }
