@@ -54,5 +54,13 @@ function submitMessage() {
         </div>`;
 
     htmlCode.innerText = htmlContent;
+    navigator.clipboard.writeText(htmlContent).then(
+      function () {
+        htmlCode.innerHTML += " تم نسخ المحتوى تلقائيًا!";
+      },
+      function () {
+        htmlCode.innerHTML += " فشل في نسخ المحتوى!";
+      }
+    );
   }
 }

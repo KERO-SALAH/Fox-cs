@@ -43,7 +43,8 @@ function submitMessage() {
                 <div class="lecture-title">${title}</div>
                 <div class="lecture-description">${dis}</div>
                 <a
-                  href="${link}"
+                  href="${link}    target="_blank"
+"
                 >
                   <button class="lecture-button">Show</button>
                 </a>

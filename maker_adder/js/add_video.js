@@ -10,27 +10,6 @@ function submitMessage() {
 
   if (link.trim() === "") {
   } else {
-    var finalMessage = dis;
-
-    finalMessage = finalMessage.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
-
-    finalMessage = finalMessage.replace(
-      /(https?:\/\/[^\s]+)/g,
-      '<a href="$1" target="_blank">من هنا</a>'
-    );
-
-    // تحويل الأسطر الجديدة إلى <br>
-    finalMessage = finalMessage.replace(/\n/g, "<br>");
-
-    var options = {
-      day: "numeric",
-      month: "numeric",
-      year: "numeric",
-    };
-
-    var currentDate = new Date();
-    var dateString = currentDate.toLocaleString("en-GB", options);
-
     var htmlContent = `
                  <div class="lecture-card ${language} ">
                   <div class="lecture-image">
@@ -42,7 +21,8 @@ function submitMessage() {
                   <div class="lecture-title">${title}</div>
                   <div class="lecture-description">${dis}</div>
                   <a
-                    href="${link}"
+                    href="${link}    target="_blank"
+"
                   >
                     <button class="lecture-button">Show</button>
                   </a>
