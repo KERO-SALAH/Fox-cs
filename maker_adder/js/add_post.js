@@ -53,7 +53,6 @@ function submitMessage() {
           </div>
         </div>`;
 
-    htmlCode.innerText = htmlContent;
     navigator.clipboard.writeText(htmlContent).then(
       function () {
         htmlCode.innerHTML += " تم نسخ المحتوى تلقائيًا!";
