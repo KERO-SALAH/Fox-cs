@@ -650,5 +650,23 @@ div#summaries {
     flex-direction: row;
   }
 }
-@media (max-width: 680px) {
+@media (min-width: 900px) {
+  div#sections {
+    flex-direction: row;
+  }
+}
+
+div#lectures {
+  width: 100%;
+}
+
+div#sections {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  div#sections {
+    flex-direction: row;
+  }
 }
