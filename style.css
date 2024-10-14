@@ -689,3 +689,12 @@ div#rec {
     flex-direction: row;
   }
 }
+.kkk {
+  background-color: #df1a1a;
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
