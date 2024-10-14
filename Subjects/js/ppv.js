@@ -24,3 +24,8 @@ fetch("../maker_adder/DB/posts.html")
   .then((data) => {
     document.getElementById("important").innerHTML = data;
   });
+  fetch("../maker_adder/DB/rec.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("rec").innerHTML = data;
+  });

@@ -17,7 +17,7 @@ function submitMessage() {
 
     finalMessage = finalMessage.replace(
       /(https?:\/\/[^\s]+)/g,
-      '<a href="$1" target="_blank">من هنا</a>'
+      '<a href="$1" target="_blank">من هنا</a>' 
     );
 
     // تحويل الأسطر الجديدة إلى <br>
