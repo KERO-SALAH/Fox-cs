@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Text</title>
+    <style>
+        .highlight {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="content">هذا نص يحتوي على ##نص باللون الأحمر# بين علامتين#آخر نص باللون الأحمر##.</p>
+    <p id="content">هذا نص يحتوي على ##نص باللون
+        
+    <p id="content">هذا نص يحتوي على ##نص باللون الأحمر# بين علامتين#آخر نص باللون الأحمر##.</p>
+    الأحمر# بين علامتين#آخر نص باللون الأحمر##.</p>
+
+    <script>
+        function highlightText() {
+            const paragraph = document.getElementById('content');
+            const text = paragraph.innerHTML;
+
+            // Regular expression to find text between ##
+            const updatedText = text.replace(/#(.*?)#/g, '<span class="highlight">$1</span>');
+
+            // Update the paragraph with the highlighted text
+            paragraph.innerHTML = updatedText;
+        }
+
+        // Call the function to highlight the text
+        highlightText();
+    </script>
+</body>
+</html>
