@@ -16,3 +16,7 @@
 .tac {
   text-align: center;
 }
+.tr {
+  border: 5px;
+  background: linear-gradient(135deg, #d1d1d1, #0043ff);
+}
