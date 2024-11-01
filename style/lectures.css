@@ -28,7 +28,7 @@ h1 {
   gap: 20px;
 }
 .lecture-card {
-  background: linear-gradient(135deg, #ff7a18, #af002d);
+  background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
   border-radius: 15px;
   padding: 20px;
 

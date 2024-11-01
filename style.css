@@ -34,7 +34,7 @@ header {
   height: 100%;
   display: flex;
   margin: 0 auto;
-  background-color: #325e93;
+  background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
   justify-content: space-between;
   align-items: center;
 }
@@ -317,17 +317,11 @@ nav a li {
   gap: 20px;
   padding: 20px;
 }
-.contents {
-  border: 8px solid;
-  border-radius: 20px;
-  background-color: white;
-  border-color: #eb874b;
-  margin: 3%;
-}
+
 .total .title h1,
 .total .content {
   color: white;
-  background-color: #eb874b;
+  background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
   padding: 10px 20px 10px 0px;
   border-bottom-right-radius: 122px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -338,7 +332,6 @@ nav a li {
 body {
   padding: 0px;
   margin: 0;
-  background-color: #325e93;
 }
 
 .slide {
@@ -491,7 +484,7 @@ img {
 .TOS {
   text-align: center;
   color: white;
-  background: linear-gradient(135deg, #ff7a18, #af002d);
+  background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
   margin: 3%;
   border-radius: 20px;
 }
@@ -584,6 +577,7 @@ img.img50_post {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .contents {
+  border-radius: 20px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 #mas {
@@ -689,8 +683,8 @@ div#rec {
     flex-direction: row;
   }
 }
-.kkk {
-  background-color: #df1a1a;
+.kmona {
+  background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
   border-radius: 20px;
   margin: 20px;
   display: flex;
