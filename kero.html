@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جدول المحاضرات والفصول</title>
+    <style>
+      /* تنسيقات عامة للصفحة */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #1e1e2f;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      /* تنسيقات العنوان الرئيسي */
+      h1 {
+        color: #ff6b6b;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      /* تصميم الشبكة */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      /* تصميم الكروت */
+      .card {
+        background: linear-gradient(145deg, #292940, #1b1b2e);
+        border-radius: 15px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* تزيين العنوان الفرعي لكل مادة */
+      .card h2 {
+        color: #ffd369;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      /* تصميم القائمة */
+      .card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #c8c8d7;
+      }
+
+      /* تصميم العناصر داخل القائمة */
+      .card ul li {
+        font-size: 1em;
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 20px;
+        transition: color 0.3s;
+      }
+
+      /* رمز امام كل عنصر */
+      .card ul li::before {
+        content: "•";
+        color: #ff6b6b;
+        position: absolute;
+        left: 0;
+        font-size: 1.2em;
+        line-height: 1;
+      }
+
+      /* تأثير عند التحريك فوق العناصر */
+      .card ul li:hover {
+        color: #ffd369;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>جدول المحاضرات والفصول</h1>
+    <div class="container">
+      <div class="card">
+        <h2>OOP</h2>
+        <ul>
+          <li><strong>Lectures:</strong></li>
+          <li>Lec 1</li>
+          <li>Lec 2</li>
+          <li>Lec 3</li>
+          <li>Lec 4</li>
+          <li>Lec 5 --> Slide 22</li>
+          <li><strong>Sheets:</strong></li>
+          <li>Sheet 1</li>
+          <li>Sheet 2</li>
+          <li>Sheet 3</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Data Communication</h2>
+        <ul>
+          <li><strong>Lectures:</strong></li>
+          <li>Lec 1</li>
+          <li>Lec 2</li>
+          <li>Lec 3</li>
+          <li>Lec 4 --> Slide 19</li>
+          <li><strong>Chapters:</strong></li>
+          <li>Chapter 1</li>
+          <li>Chapter 2</li>
+          <li>Chapter 3</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Discrete Structures</h2>
+        <ul>
+          <li><strong>Lectures:</strong></li>
+          <li>Lec 1</li>
+          <li>Lec 2</li>
+          <li>Lec 3 --> Slide 25</li>
+          <li><strong>Sheets:</strong></li>
+          <li>Sheet 1</li>
+          <li>Sheet 2</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Signals & Systems</h2>
+        <ul>
+          <li><strong>Lectures:</strong></li>
+          <li>Lec 1</li>
+          <li>Lec 2</li>
+          <li>Lec 3</li>
+          <li>Lec 4</li>
+          <li><strong>Sections:</strong></li>
+          <li>Section 1</li>
+          <li>Section 2</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Business Management</h2>
+        <ul>
+          <li><strong>Chapters:</strong></li>
+          <li>Chapter 1</li>
+          <li>Chapter 2</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Probability & Statistics</h2>
+        <ul>
+          <li><strong>Chapters:</strong></li>
+          <li>Chapter 1</li>
+          <li>Chapter 2</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Project Management</h2>
+        <ul>
+          <li><strong>Lectures:</strong></li>
+          <li>Lecture 1 & 2</li>
+          <li>Lecture 3 & 4</li>
+          <li>Lecture 5</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
