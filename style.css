@@ -85,13 +85,6 @@ nav a li {
 
 /* تصميم متجاوب */
 @media (max-width: 900px) {
-  .inner_header {
-    /* ترك فارغًا لاحتياجات التصميم لاحقًا */
-  }
-  #total_div {
-    width: 100%;
-  }
-
   nav {
     display: none;
   }
