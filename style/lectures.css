@@ -12,7 +12,7 @@ h1 {
   position: relative;
 }
 
-#important {
+#important,#videos,#tr,#rec {
   display: flex;
   gap: 20px;
 }
@@ -86,10 +86,8 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  #important {
-    flex-direction: column;
-  }
-  #important {
+  
+  #important,#videos,#tr,#rec {
     flex-direction: column;
   }
   #lectures {
@@ -102,12 +100,10 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  #important {
+  #important,#videos,#tr,#rec{
     flex-direction: column;
   }
-  #important {
-    flex-direction: column;
-  }
+  
   #lectures {
     flex-direction: column;
   }

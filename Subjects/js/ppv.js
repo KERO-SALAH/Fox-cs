@@ -1,3 +1,10 @@
+//السكشنز اللي في المواد
+fetch("/parts/sections_in_subject.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("sectionss").innerHTML = data;
+  });
+
 fetch("../maker_adder/DB/posts.html")
   .then((response) => response.text())
   .then((data) => {
@@ -13,6 +20,16 @@ fetch("../maker_adder/DB/posts.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("lectures").innerHTML = data;
+  });
+  fetch("../maker_adder/DB/vid.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("videos").innerHTML = data;
+  });
+  fetch("../maker_adder/DB/tr.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("tr").innerHTML = data;
   });
   fetch("../maker_adder/DB/sections.html")
   .then((response) => response.text())
