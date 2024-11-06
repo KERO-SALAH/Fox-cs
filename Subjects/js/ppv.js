@@ -1,5 +1,5 @@
 //السكشنز اللي في المواد
-fetch("../parts/sections_in_subject.html")
+fetch("https://kero-salah.github.io/Fox-cs/parts/sections_in_subject.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("sectionss").innerHTML = data;
