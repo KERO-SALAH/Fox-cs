@@ -604,7 +604,10 @@ img.img50_post {
   text-align: center;
 }
 
-div#important,div#tr,div#videos,div#rec {
+div#important,
+div#tr,
+div#videos,
+div#rec {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -684,4 +687,13 @@ div#rec {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
+}
+div#important {
+  display: flex;
+  flex-direction: column;
+}
+
+#important .lecture-card {
+  max-width: none;
+  flex-direction: row;
 }
