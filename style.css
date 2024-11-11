@@ -697,3 +697,10 @@ div#important {
   max-width: none;
   flex-direction: row;
 }
+@media (max-width: 680px) {
+  #important .lecture-card {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+  }
+}

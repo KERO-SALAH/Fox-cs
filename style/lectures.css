@@ -130,10 +130,11 @@ h1 {
 }
 @media (max-width: 680px) {
   .lecture-card {
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     justify-content: space-around;
   }
+ 
   .aa a {
     width: 100px;
   }
