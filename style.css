@@ -680,8 +680,7 @@ div#rec {
   }
 }
 .kmona {
-  background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
-  border-radius: 20px;
+  background: linear-gradient(135deg, rgb(255 0 0), #000000);  border-radius: 20px;
   margin: 20px;
   display: flex;
   justify-content: space-between;
@@ -703,4 +702,8 @@ div#important {
     gap: 10px;
     justify-content: space-around;
   }
+}
+.kmona h3 {
+  font-weight: 500;
+  color: white;
 }
