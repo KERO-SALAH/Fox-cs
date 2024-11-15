@@ -607,7 +607,7 @@ img.img50_post {
 div#important,
 div#tr,
 div#videos,
-div#rec {
+div#rec,div#videoes {
   flex-wrap: wrap;
   justify-content: center;
 }
