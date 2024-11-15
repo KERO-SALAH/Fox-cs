@@ -26,6 +26,11 @@ fetch("../maker_adder/DB/posts.html")
   .then((data) => {
     document.getElementById("videos").innerHTML = data;
   });
+  fetch("../maker_adder/DB/videoes.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("videoss").innerHTML = data;
+  });
   fetch("../maker_adder/DB/tr.html")
   .then((response) => response.text())
   .then((data) => {
