@@ -2,6 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/yYdJNqF/logo.png"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
@@ -30,35 +36,28 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-
+        gap: 20px;
         color: #f0f0f0;
         display: flex;
         justify-content: center;
-
         flex-direction: column;
-      }
-      .container {
-        all: unset;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        gap: 20px;
-        max-width: 1200px;
-
-        margin: 20px;
+        margin: 0;
         padding: 20px;
       }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
       .card {
-        all: unset;
         background: linear-gradient(135deg, rgb(0 0 0), #4190ef);
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         position: relative;
+        justify-content: flex-start;
       }
       .card h2 {
-        display: flex;
         color: #a8df65;
         font-size: 1.2em;
         margin-bottom: 10px;
@@ -80,8 +79,6 @@
         border-radius: 8px;
         text-align: center;
         margin-bottom: 20px;
-        margin: 20px;
-        padding: 20px;
       }
       .progress-container p {
         font-size: 1.2em;
@@ -121,11 +118,6 @@
         font-weight: bold;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       }
-      @media (max-width: 480px) {
-        .card {
-          width: 100%;
-        }
-      }
     </style>
 
     <div class="progress-container">
@@ -159,24 +151,40 @@
           </li>
           <li>
             <input type="checkbox" class="task-checkbox" data-id="oop-lec5" />
-            Lec 5 
+            Lec 5
           </li>
           <li>
-            <input type="checkbox" class="task-checkbox" data-id="oop-sheet1" />
-            Sheet 1
+            <input type="checkbox" class="task-checkbox" data-id="oop-lec6" />
+            Lec 6
           </li>
-          <li>
-            <input type="checkbox" class="task-checkbox" data-id="oop-sheet2" />
-            Sheet 2
-          </li>
-          <li>
-            <input type="checkbox" class="task-checkbox" data-id="oop-sheet3" />
-            Sheet 3
-          </li>
-          
         </ul>
       </div>
-      
+      <div class="card" data-subject="oopw">
+        <div class="subject-progress-circle" id="oopw-progress">0%</div>
+        <h2>IS</h2>
+        <ul>
+          <li>
+            <input type="checkbox" class="task-checkbox" data-id="oo1p-lec1" />
+            Lec 1
+          </li>
+          <li>
+            <input type="checkbox" class="task-checkbox" data-id="o1p-lec2" />
+            Lec 2
+          </li>
+          <li>
+            <input type="checkbox" class="task-checkbox" data-id="o1op-lec3" />
+            Lec 3
+          </li>
+          <li>
+            <input type="checkbox" class="task-checkbox" data-id="oo1p-lec4" />
+            Lec 4
+          </li>
+          <li>
+            <input type="checkbox" class="task-checkbox" data-id="oop1-lec5" />
+            Lec 5
+          </li>
+        </ul>
+      </div>
 
       <!-- Data Communication Card -->
       <div class="card" data-subject="data-communication">
@@ -215,39 +223,7 @@
               class="task-checkbox"
               data-id="data-communication-lec4"
             />
-            Lec 4 
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="data-communication-chap1"
-            />
-            Sheet 1
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="data-communication-chap2"
-            />
-            Sheet 2
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="data-communication-chap3"
-            />
-            Sheet 3
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="data-communication-chap4"
-            />
-            Sheet 4
+            Lec 4
           </li>
         </ul>
       </div>
@@ -281,36 +257,60 @@
               class="task-checkbox"
               data-id="discrete-structures-lec3"
             />
-            Lec 3 
+            Lec 3
           </li>
           <li>
             <input
               type="checkbox"
               class="task-checkbox"
-              data-id="discrete-structures-sheet1"
+              data-id="discrete-structures-lec4"
             />
-            Sheet 1
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="discrete-structures-sheet2"
-            />
-            Sheet 2
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="discrete-structures-sheet3"
-            />
-            Sheet 3
+            Lec 4
           </li>
         </ul>
       </div>
 
-    
+      <!-- Signals & Systems Card -->
+      <div class="card" data-subject="signals-systems">
+        <div class="subject-progress-circle" id="signals-systems-progress">
+          0%
+        </div>
+        <h2>Technical writing</h2>
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="signals-systems-lec1"
+            />
+            Lec 1
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="signals-systems-lec2"
+            />
+            Lec 2
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="signals-systems-lec3"
+            />
+            Lec 3
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="signals-systems-lec4"
+            />
+            Lec 5
+          </li>
+        </ul>
+      </div>
 
       <!-- Project Management Card -->
       <div class="card" data-subject="project-management">
@@ -325,7 +325,7 @@
               class="task-checkbox"
               data-id="project-management-lec12"
             />
-            Lecture 1&2
+            Lecture 2
           </li>
           <li>
             <input
@@ -333,7 +333,15 @@
               class="task-checkbox"
               data-id="project-management-lec34"
             />
-            Lecture 3&4
+            Lecture 3
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="project-management-lec4"
+            />
+            Lecture 4
           </li>
           <li>
             <input
@@ -343,43 +351,38 @@
             />
             Lecture 5
           </li>
+          <li>
+            <input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="project-management-lec6"
+            />
+            Lecture 6
+          </li>
         </ul>
       </div>
-      <!-- IS -->
- 
-      <div class="card" data-subject="is">
-        <div class="subject-progress-circle" id="project-management-progresss">
-          0%
-        </div>
-        <h2>Information system</h2>
+      <div class="card" data-subject="management">
+        <div class="subject-progress-circle" id="management-progress">0%</div>
+        <h2>Business management</h2>
         <ul>
           <li>
             <input
               type="checkbox"
               class="task-checkbox"
-              data-id="is12"
+              data-id="management-lec12"
             />
-            Lecture 1&2
+            Lecture 1
           </li>
           <li>
             <input
               type="checkbox"
               class="task-checkbox"
-              data-id="is34"
+              data-id="management-lec34"
             />
-            Lecture 3&4
-          </li>
-          <li>
-            <input
-              type="checkbox"
-              class="task-checkbox"
-              data-id="is5"
-            />
-            Lecture 5
+            Lecture 2
           </li>
         </ul>
       </div>
-
     </div>
 
     <script>
