@@ -608,7 +608,7 @@ div#important,
 div#tr,
 div#videos,
 div#rec,
-div#videoes {
+div#videoes,div#videoss {
   flex-wrap: wrap;
   justify-content: center;
 }

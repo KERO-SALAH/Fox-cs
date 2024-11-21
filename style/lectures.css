@@ -16,7 +16,7 @@ h1 {
 #videos,
 #tr,
 #rec,
-div#videoes {
+div#videoes,div#videoss {
   display: flex;
   gap: 20px;
 }
@@ -93,7 +93,7 @@ div#videoes {
   #important,
   #videos,
   #tr,
-  #rec {
+  #rec,div#videoss {
     flex-direction: column;
   }
   #lectures {
@@ -109,7 +109,7 @@ div#videoes {
   #important,
   #videos,
   #tr,
-  #rec {
+  #rec,div#videoss {
     flex-direction: column;
   }
 
