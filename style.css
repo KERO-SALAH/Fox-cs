@@ -607,7 +607,8 @@ img.img50_post {
 div#important,
 div#tr,
 div#videos,
-div#rec,div#videoes {
+div#rec,
+div#videoes {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -680,7 +681,8 @@ div#rec {
   }
 }
 .kmona {
-  background: linear-gradient(135deg, rgb(255 0 0), #000000);  border-radius: 20px;
+  background: linear-gradient(135deg, rgb(255 0 0), #000000);
+  border-radius: 20px;
   margin: 20px;
   display: flex;
   justify-content: space-between;
@@ -706,4 +708,9 @@ div#important {
 .kmona h3 {
   font-weight: 500;
   color: white;
+}
+div#videoss {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
