@@ -1,0 +1,220 @@
+
+   :root {
+   --primary-color: #2c3e50;
+   --secondary-color: #3498db;
+   --hover-color: #2980b9;
+   }
+   * {
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+   }
+   body {
+   margin: 0;
+   padding: 0px;
+   background-color: #f8f9fa;
+   }
+   .nav {
+   display: grid;
+   gap: 10px;
+   margin-bottom: 30px;
+   }
+   .nav-button {
+   background: var(--primary-color);
+   color: white;
+   border: none;
+   padding: 12px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: 0.3s;
+   font-size: 16px;
+   }
+   .nav-button.active {
+   background: #000000;
+   box-shadow: 0 3px 15px rgba(52, 152, 219, 0.3);
+   }
+   .subject-container {
+   display: none;
+   background: white;
+   border-radius: 15px;
+   box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+   padding: 25px;
+   margin-bottom: 20px;
+   }
+   .subject-container.active {
+   display: block;
+   animation: fadeIn 0.5s ease;
+   }
+   .lecture-box {
+   background: #c0e0ff;
+   border: 2px solid #eee;
+   border-radius: 12px;
+   margin: 15px 0;
+   padding: 20px;
+   transition: 0.3s;
+   }
+   .lecture-box:hover {
+   border-color: var(--secondary-color);
+   transform: translateY(-3px);
+   }
+   .lecture-header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 15px;
+   flex-direction: column;         }
+   .lecture-title {
+   color: var(--primary-color);
+   margin: 0;
+   font-size: 20px;
+   }
+   .materials-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 15px;
+   }
+   .material-card {
+   background: #f8f9fa;
+   padding: 15px;
+   border-radius: 8px;
+   text-align: center;
+   min-height: 180px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   }
+   .material-icon {
+   font-size: 32px;
+   margin-bottom: 10px;
+   }
+   .download-btn {
+   display: inline-block;
+   background: var(--secondary-color);
+   color: white;
+   padding: 8px 20px;
+   border-radius: 5px;
+   text-decoration: none;
+   margin-top: 10px;
+   transition: 0.3s;
+   font-size: 14px;
+   }
+   .download-btn:hover {
+   background: var(--hover-color);
+   box-shadow: 0 3px 10px rgba(41, 128, 185, 0.3);
+   }
+   @keyframes fadeIn {
+   from { opacity: 0; transform: translateY(10px); }
+   to { opacity: 1; transform: translateY(0); }
+   }
+   @media (max-width: 768px) {
+   .nav { grid-template-columns: 1fr; }
+   .lecture-header {
+   flex-direction: column;
+   display: flex
+   ;
+   align-content: center;
+   align-items: center;
+   }        
+   .material-card { min-height: auto; }
+   .materials-grid {
+   display: grid
+   ;
+   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+   gap: 15px;
+   }
+   }
+   img.icon{
+   width:100px;
+   }
+   img {
+   width: 56px;}
+   .material-card.section {
+   background: antiquewhite;
+   }    
+   .whatsapp-button {
+   display: inline-block;
+   background-color: #25D366;
+   color: white;
+   padding: 10px 20px;
+   font-size: 18px;
+   text-decoration: none;
+   border-radius: 5px;
+   font-family: Arial, sans-serif;
+   transition: background-color 0.3s;
+   }
+   .whatsapp-button:hover {
+   background-color: #1ebe5d;
+   }
+   a.nav-button {
+   display: flex
+   ;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   font-weight: 700;
+   }
+   button.nav-button {
+   min-height: 30px;
+   padding: 15px 30px;
+   background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
+   color: white;
+   border: none;
+   border-radius: 90px;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+   }
+   a.nav-button {
+   min-height: 30px;
+   padding: 15px 30px;
+   background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
+   color: white;
+   border: none;
+   border-radius: 90px;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+   }
+   a.download-btn {
+   min-height: 30px;
+   padding: 15px 30px;
+   background: linear-gradient(135deg, rgb(90, 170, 255), #325e93);
+   color: white;
+   border: none;
+   border-radius: 90px;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+   }
+   .material-card {
+   min-height: 30px;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+   padding: 15px 30px;
+   background: linear-gradient(135deg, rgb(255 255 255), #fdfeff);
+   border: none;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+   }
+   .lecture-box {
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+   }
+  h1{
+      text-align: center;
+  }
