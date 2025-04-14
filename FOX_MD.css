@@ -119,3 +119,16 @@ body {
 pre {
     padding: 0px;
 }
+a {
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 13px;
+    color: white;
+    background: #db3434;
+}
+
+.MCQ {
+    display: flex;
+    justify-content: center;
+}
