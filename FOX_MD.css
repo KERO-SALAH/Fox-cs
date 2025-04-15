@@ -131,6 +131,9 @@ pre {
 .ar {
     direction: rtl;
 }
+.ar td {
+    text-align: right;
+}
 
 .MCQ {
     display: flex;
