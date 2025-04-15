@@ -139,3 +139,7 @@ pre {
     display: flex;
     justify-content: center;
 }
+
+code {
+    direction: ltr;
+}
