@@ -65,6 +65,7 @@ body {
             color: #34495e;
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
+            display: inline-flex;
         }
         h3 {
             color: #e67e22;
