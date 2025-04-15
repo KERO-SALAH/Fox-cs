@@ -128,6 +128,9 @@ pre {
     color: white;
     background: #db3434;
 }
+.ar {
+    direction: rtl;
+}
 
 .MCQ {
     display: flex;
