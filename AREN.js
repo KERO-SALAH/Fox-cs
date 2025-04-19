@@ -1,20 +1,23 @@
 function detectDirectionByFirstChar(text) {
-  // شيل المسافات والأحرف الخاصة من البداية
   const cleaned = text.trim();
 
   for (let char of cleaned) {
-    if (char >= 'ء' && char <= 'ي') return 'rtl'; // أول حرف عربي
-    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) return 'ltr'; // أول حرف إنجليزي
+    if (/[\d\s\W_]/.test(char)) continue;
+
+    if (char >= 'ء' && char <= 'ي') return 'rtl';
+    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) return 'ltr';
   }
 
-  // افتراضي إذا ما فيش حرف واضح
   return 'ltr';
 }
 
 function autoAdjustDirection() {
-  const elements = document.querySelectorAll('p, span, div, textarea, input, h1, h2, h3, h4, h5, h6');
+  const elements = document.querySelectorAll('*'); // ✅ كل العناصر
 
   elements.forEach(el => {
+    // اتأكد إن العنصر ممكن يكون فيه نص
+    if (!('innerText' in el || 'value' in el)) return;
+
     const text = el.innerText || el.value || '';
     if (text.trim() === '') return;
 
