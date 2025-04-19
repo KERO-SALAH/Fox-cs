@@ -2,29 +2,31 @@ function detectDirectionByFirstChar(text) {
   const cleaned = text.trim();
 
   for (let char of cleaned) {
-    // تجاهل الحروف غير المفيدة (رموز، أرقام، مسافات، إلخ)
-    if (!char.match(/[A-Za-z\u0600-\u06FF]/)) continue;
-
-    // لو أول حرف عربي
-    if (char >= 'ء' && char <= 'ي') return 'rtl';
-
-    // لو أول حرف إنجليزي
-    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) return 'ltr';
+    // نركز بس على الحروف العربية أو الإنجليزية
+    if (/[ء-ي]/.test(char)) return 'rtl'; // أول حرف عربي
+    if (/[a-zA-Z]/.test(char)) return 'ltr'; // أول حرف إنجليزي
   }
 
   return 'ltr'; // افتراضي
 }
 
 function autoAdjustDirection() {
-  const elements = document.querySelectorAll('*');
+  const elements = document.querySelectorAll('*'); // كل العناصر
 
   elements.forEach(el => {
-    // تأكد إن العنصر قابل لاحتواء نص
-    const text = el.innerText || el.value || '';
-    if (text.trim() === '') return;
+    // لو العنصر قابل لاحتواء نص
+    let text = '';
 
-    const direction = detectDirectionByFirstChar(text);
-    el.dir = direction;
+    if (el.nodeName === 'INPUT' || el.nodeName === 'TEXTAREA') {
+      text = el.value;
+    } else {
+      text = el.innerText;
+    }
+
+    if (text && text.trim() !== '') {
+      const dir = detectDirectionByFirstChar(text);
+      el.setAttribute('dir', dir); // نحط الاتجاه صراحةً
+    }
   });
 }
 
