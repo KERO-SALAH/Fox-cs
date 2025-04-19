@@ -2,26 +2,29 @@ function detectDirectionByFirstChar(text) {
   const cleaned = text.trim();
 
   for (let char of cleaned) {
-    if (/[\d\s\W_]/.test(char)) continue;
+    // تجاهل الحروف غير المفيدة (رموز، أرقام، مسافات، إلخ)
+    if (!char.match(/[A-Za-z\u0600-\u06FF]/)) continue;
 
+    // لو أول حرف عربي
     if (char >= 'ء' && char <= 'ي') return 'rtl';
+
+    // لو أول حرف إنجليزي
     if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) return 'ltr';
   }
 
-  return 'ltr';
+  return 'ltr'; // افتراضي
 }
 
 function autoAdjustDirection() {
-  const elements = document.querySelectorAll('*'); // ✅ كل العناصر
+  const elements = document.querySelectorAll('*');
 
   elements.forEach(el => {
-    // اتأكد إن العنصر ممكن يكون فيه نص
-    if (!('innerText' in el || 'value' in el)) return;
-
+    // تأكد إن العنصر قابل لاحتواء نص
     const text = el.innerText || el.value || '';
     if (text.trim() === '') return;
 
-    el.dir = detectDirectionByFirstChar(text);
+    const direction = detectDirectionByFirstChar(text);
+    el.dir = direction;
   });
 }
 
