@@ -2,3 +2,8 @@
 code {
     direction: ltr;
 }
+code {
+    background: #f4781491;
+    border-radius: 20px;
+    padding: 0px 5px;
+}
