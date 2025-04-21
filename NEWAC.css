@@ -7,3 +7,10 @@ code {
     border-radius: 20px;
     padding: 0px 5px;
 }
+ol {
+    padding: 0px 20px;
+}
+
+ul {
+    padding: 0px 20px;
+}
