@@ -3,9 +3,13 @@ code {
     direction: ltr;
 }
 code {
-    background: #ffc107;
-    border-radius: 5px;
-    padding: 0px 5px;
+ background-color: #d0f0fd;       /* سماوي هادي */
+  color: #003249;                  /* أزرق غامق للنص */
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-weight: 500;                /* نص متوسط السُمك */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95em;
 }
 ol {
     padding: 0px 20px;
