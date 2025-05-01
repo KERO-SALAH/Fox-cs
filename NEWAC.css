@@ -14,3 +14,8 @@ ol {
 ul {
     padding: 0px 20px;
 }
+.post-home.cont {
+    background: #9e9e9e1c;
+    border-radius: 20px;
+    padding: 10px;
+}
