@@ -23,3 +23,19 @@ ul {
     border-radius: 20px;
     padding: 10px;
 }
+
+.toggle-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
