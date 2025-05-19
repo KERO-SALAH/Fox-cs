@@ -39,3 +39,6 @@ ul {
 .toggle-btn:hover {
   background-color: #388e3c;
   transform: scale(1.05);
+hr {
+    margin: 31px 36%;
+}
